@@ -1,0 +1,252 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+list-style: none;
+text-decoration: none;
+}
+
+header{
+position: fixed;
+right:0;
+top: 0;
+z-index: 1000;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 33px 9%;
+background: transparent;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a {
+    color: rgb(255, 255, 255);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001 ;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(242.59deg,#A4A4A4 20%, #cccccc 30%,  #000000 90.55%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding:  0 19%;
+}
+.hero-text{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+    box-sizing: border-box;
+
+}
+.hero-text h5{
+    font-size: 35px;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 10%;
+    margin: 0 0 45px;
+}
+
+.hero-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 105px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4{
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    margin: 1px;
+}
+
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    width: 700px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;   
+    }
+}
+
+@media (max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1195px){
+    Section {
+        padding: 0 3%;
+        transition: .2s;
+}
+
+.hero-text{
+    padding-top: 115px;
+}
+
+.hero-img{
+    text-align: center;
+}
+
+.hero-img img{
+    width: 560px;
+    height: auto;
+}
+
+.hero{
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 990px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 40vh;
+        background: linear-gradient(to right, #2f2f2f, #959595); 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px 20px;
+        transition: all .55s ease;
+        border-radius: 70px 10px;
+    }
+    
+    .navlist a{
+        display: block;
+        margin: 10px 0 ;
+        margin-left: 0;
+    }
+
+    .navlist.open{
+        right: 0;
+    }
+
+.hero-text p{
+    margin: 10px;
+    font-size: 17px;
+}
+
+    .hero-text h5{
+      
+        margin: 10px;
+        font-size: 25px;
+    }
+    
+    .hero-text h1{
+      
+        margin: 10px;
+    }
+    
+    .hero-text h4{
+       
+        margin: 10px;
+    }
+    .hero-text a{
+        margin: 10px;}
+
+.hero-text{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+}
+@media (max-width: 680px){
+    .hero-img img {
+        width: 100%;
+        height: auto;    
+    }
+}
