@@ -188,20 +188,22 @@ section{
         display: block;
     }
 
-    .navlist{
+     .navlist{
         position: absolute;
-        top: 100%;
+        top: 50%;
         right: -100%;
-        width: 200px;
-        height: 40vh;
+        width: auto;
+        height: auto;
         background: linear-gradient(to right, #2f2f2f, #959595); 
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 25px 20px;
+        padding: inherit;
+        margin: 50px;
         transition: all .55s ease;
         border-radius: 70px 10px;
     }
+    
     
     .navlist a{
         display: block;
